@@ -35,4 +35,11 @@ class ApplicationTests {
         page.getRecords().forEach(System.out::println);
     }
 
+    @Test
+    void contextLoadsdev() {
+        Page<User> page = new Page<>(1,3);
+        userMapper.selectPage(page,null);
+        page.getRecords().forEach(System.out::println);
+    }
+
 }
