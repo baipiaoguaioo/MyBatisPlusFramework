@@ -1,0 +1,16 @@
+# 应用名称
+spring:
+  application:
+    name: 001-mybatisplus-quickstrat
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis_plus
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
